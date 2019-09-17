@@ -1,5 +1,3 @@
 # ee445l-lab02-template
 
-## Things you have to do to make this work right
-
-* chance the sources in the makefile (line 15)
+Note: Only .tex template is available from here on out because of pictures and stuff. I encourage you to use this, but it is by no means required. Using Microsoft Word and Google Docs are fine as long as you output to PDF format.
