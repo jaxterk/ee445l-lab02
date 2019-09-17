@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage{geometry,framed,listings,graphicx}
+\geometry{letterpaper,margin=1in}
+
+\title{EE 445L Lab 2 Report}
+\author{Firstname Lastname (eid123) \and Firstname Lastname (eid123)} %TODO Replace everything in this field and the content between the [square brackets] with the appropriate information
+\begin{document}
+\maketitle
+
+\section{Objectives} % What did you do to complete this lab? What components (! and tools !) were you learning about? Why do you think we made you do this lab?
+\begin{itemize}
+	\item Stuff stuff stuff %TODO
+	\item More stuff stuff
+\end{itemize}
+
+\section{Preparation Questions}
+
+\begin{enumerate}
+	\item \emph{What is the purpose of all the DCW statements?}
+
+		Write answer here %TODO
+
+	\item \emph{The main program toggles PF1. Neglecting interrupts for this
+		part, estimate how fast PF1 will toggle.}
+
+		Write answer here %TODO
+
+	\item \emph{What is in R0 after the first LDR is executed? What is in R0
+		after the second LDR is executed?}
+
+		Write answer here %TODO
+
+	\item \emph{How would you have written the compiler to remove an
+		instruction?}
+
+		Write definition here %TODO
+
+	\item \emph{100-Hz ADC sampling occurs in the Timer0 ISR. The ISR toggles
+		PF2 three times. Toggling three times in the ISR allows you to measure
+		both the time to execute the ISR and the time between interrupts. See
+		Figure 2.1. Do these two read-modify write sequences to Port F create
+		a critical section? If yes, describe how to remove the critical
+		section? If no, justify your answer?}
+
+		Write answer here %TODO
+
+\end{enumerate}
+
+\section{Hardware Design} %TODO
+% How did you get an analog voltage? Static voltage divider using resistors? Potentiometer? Some sort of sensor?
+% If you used hardware debugging tools, describe your process and reasoning.
+
+\section{Software Design} %TODO Description of what you changed or made in terms of software
+% Note: While you don't have to include code snippets in your report, please submit code either as a .zip file on canvas or as a link to a Github repo.
+
+\subsection{[TimerX.c]} %TODO For this lab, I would like a summary of each timer you used and what you used it for
+% What kind of timer is it? How often should it run? How do you avoid critical sections? Use \verb|this command| for variable and function names and stuff.
+
+\begin{framed}\begin{verbatim}
+	[You can use these for multi-line code snippets]
+\end{verbatim}\end{framed}
+
+\section{Measurement Data}
+% Note: image names and extensions should be changed to match your files
+
+\subsection{Debugging profile with oscilloscope}
+
+	\includegraphics[scale=1.0]{mda.jpg} 
+
+\subsection{Debugging profile with logic analyzer}
+
+	\includegraphics[scale=1.0]{mdb1.jpg}
+	Estimated time proportion of ISR compared to main: ## %TODO Value goes here
+
+\subsection{Explain critical sections and how to remove them}
+
+	Write explanation here %TODO
+
+\subsection{Jitter}
+
+	Write results here %TODO
+
+\subsection{Noise}
+
+	\includegraphics[scale=0.5]{mdf0.jpg} 
+	\includegraphics[scale=0.5]{mdf1.jpg} 
+	\includegraphics[scale=0.5]{mdf2.jpg} 
+	\includegraphics[scale=0.5]{mdf3.jpg} 
+	\includegraphics[scale=0.5]{mdf4.jpg} 
+	\includegraphics[scale=0.5]{mdf5.jpg} 
+	\includegraphics[scale=0.5]{mdf6.jpg} 
+
+	\emph{Does the data support CLT? If not, why?}
+
+	Write conclusion here %TODO
+
+\subsection{Hardware averaging time}
+
+	\includegraphics[scale=1.0]{mdf7.jpg}
+
+	\emph{Why is it different?}
+
+	Write reasoning here %TODO
+
+\section{Analysis and Discussion} % Just gotta answer these questions
+
+\begin{enumerate}
+	\item \emph{The ISR toggles PF2 three times. Is this debugging intrusive,
+		nonintrusive or minimally intrusive? Justify your answer.}
+
+		Write answer here %TODO
+
+	\item \emph{In this lab we dumped strategic information into arrays and
+		processed the arrays later. Notice this approach gives us similar
+		information we could have generated with a printf statement. In ways
+		are printf statements better than dumps? In what ways are dumps better
+		than printf statements?}
+
+		Write answer here %TODO
+
+	\item \emph{What are the necessary conditions for a critical section to
+		occur? In other words, what type of software activities might result
+		in a critical section?}
+
+		Write answer here %TODO
+
+	\item \emph{Define “minimally intrusive”.}
+
+		Write definition here %TODO
+
+	\item \emph{The PMF results should show hardware averaging is less noisy
+		than not averaging. If it is so good, why don’t we always use it?}
+
+		Write answer here %TODO
+
+\end{enumerate}
+\end{document}
